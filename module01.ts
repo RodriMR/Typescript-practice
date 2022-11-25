@@ -39,7 +39,6 @@ console.log(addNumbers(3, 6));
 //     I am new to TypeScript.`;
 // console.log(sentence);
 
-
 // enum ContractStatus {
 //   Permanent=1,
 //   Temp,
@@ -48,3 +47,41 @@ console.log(addNumbers(3, 6));
 
 // let employeeStatus: ContractStatus = ContractStatus.Temp;
 // console.log(ContractStatus[employeeStatus]);
+
+// let randomValue: any = 10;
+// randomValue = 'Mateo';   // OK
+//     // OK
+
+// console.log(randomValue.name);  // Logs "undefined" to the console
+// randomValue();                  // Returns "randomValue is not a function" error
+// randomValue.toUpperCase();      // Returns "randomValue is not a function" error
+
+// let randomValue: unknown = 10;
+// randomValue = true;
+// randomValue = 'Mateo';
+
+// console.log(randomValue.name);  // Error: Object is of type unknown
+// randomValue();                  // Error: Object is of type unknown
+// randomValue.toUpperCase();      // Error: Object is of type unknown
+
+// let randomValue: unknown = 10;
+
+// randomValue = true;
+// randomValue = 'Mateo';
+
+// if (typeof randomValue === "string") {
+//     console.log((randomValue as string).toUpperCase());    //* Returns MATEO to the console.
+// } else {
+//     console.log("Error - A string was expected here.");    //* Returns an error message.
+// }
+
+// let randomValue: unknown = 10;
+
+// randomValue = true;
+// randomValue = "Mateo";
+
+// if (typeof randomValue === "string") {
+//   console.log((randomValue as string).toUpperCase()); //* Returns MATEO to the console.
+// } else {
+//   console.log("Error - A string was expected here."); //* Returns an error message.
+// }
