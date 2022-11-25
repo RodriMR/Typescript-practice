@@ -38,3 +38,13 @@ console.log(addNumbers(3, 6));
 // let sentence: string = `My name is ${firstName}.
 //     I am new to TypeScript.`;
 // console.log(sentence);
+
+
+// enum ContractStatus {
+//   Permanent=1,
+//   Temp,
+//   Apprentice
+// }
+
+// let employeeStatus: ContractStatus = ContractStatus.Temp;
+// console.log(ContractStatus[employeeStatus]);
