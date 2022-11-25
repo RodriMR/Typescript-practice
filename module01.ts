@@ -131,3 +131,10 @@ console.log(addNumbers(3, 6));
 // diceRoll = 1;    //* Valid
 // diceRoll = 2;    //* Valid
 // diceRoll = 7;    //* Invalid
+
+// Arrays
+// let list: number[] = [1, 2, 3];
+// let list: Array<number> = [1, 2, 3];
+
+//Tuples
+// let person1: [string, number] = ["Marcia", 35];
